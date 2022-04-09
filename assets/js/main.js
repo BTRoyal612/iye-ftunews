@@ -15,8 +15,11 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
+            $(".navbar-area").removeClass("shadow");
+
         } else {
             $(".navbar-area").addClass("sticky");
+            $(".navbar-area").addClass("shadow");
         }
     });
 
@@ -67,10 +70,26 @@ $(function() {
     
     
     //===== Round information
-    $('.round-info').hover(function(){
-        $('.hide-text').removeClass('d-none');
+    $('.round-info1').hover(function(){
+        $('.hide-text1').fadeIn(400);
+        $('.hide-text1').removeClass('d-none');
         }, function(){
-        $('.hide-text').addClass('d-none');
+        $('.hide-text1').fadeOut(400);
+        $('.hide-text1').addClass('d-none');
+    });
+    $('.round-info2').hover(function(){
+        $('.hide-text2').fadeIn(400);
+        $('.hide-text2').removeClass('d-none');
+        }, function(){
+        $('.hide-text2').fadeOut(400);
+        $('.hide-text2').addClass('d-none');
+    });
+    $('.round-info3').hover(function(){
+        $('.hide-text3').fadeIn(400);
+        $('.hide-text3').removeClass('d-none');
+        }, function(){
+        $('.hide-text3').fadeOut(400);
+        $('.hide-text3').addClass('d-none');
     });
     
     //===== Back to top

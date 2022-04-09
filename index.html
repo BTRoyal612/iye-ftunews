@@ -32,10 +32,10 @@
                                 <li class="nav-item dropdown">
                                     <a class="btn-grad nav-link dropdown" data-toggle="dropdown" data-target="#dropdown-target" href="#information" aria-expanded="false">IN YOUR EYES</a>
                                     <div class="dropdown-menu margin-auto p-2 mt-1 box-grad-color1 box" aria-labelledby="dropdown-target">
-                                        <a class="dropdown-item" href="#information">THỂ LỆ</a>
-                                        <a class="dropdown-item" href="#timeline">CƠ CẤU CUỘC THI</a>
-                                        <a class="dropdown-item" href="#prizes">CƠ CẤU GIẢI THƯỞNG</a>
-                                        <a class="dropdown-item" href="#rule">QUY ĐỊNH CHUNG</a>
+                                        <a class="dropdown-item" id="dropdown-menu-hover" href="#information">THỂ LỆ</a>
+                                        <a class="dropdown-item" id="dropdown-menu-hover" href="#timeline">CƠ CẤU CUỘC THI</a>
+                                        <a class="dropdown-item" id="dropdown-menu-hover" href="#prizes">CƠ CẤU GIẢI THƯỞNG</a>
+                                        <a class="dropdown-item" id="dropdown-menu-hover" href="#rule">QUY ĐỊNH CHUNG</a>
                                     </div>
                                 </li>
                                 <li class="nav-item"><a class="btn-grad" href="#sponsor">ĐỐI TÁC</a></li>
@@ -64,7 +64,7 @@
 
     <!--====== BANNER PART START ======-->
 
-    <section id="home" class="banner">
+    <section id="home" class="banner shadow">
         <img id="banner" src="assets/image/web-banner.jpg" alt="">
     </section>
 
@@ -75,18 +75,22 @@
     <section id="about" class="about-area section-nav">
         <div class="section-title text-center pb-10">
             <div class="container">
-                <div class="row box-grad box-grad-color1 text-box">
-                    <div class="col-lg-6">
-                        <img id="about-img" src="/assets/image/BND KHÔNG GIỚI HẠN.png" alt="responsive webite" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="title">VỀ CHÚNG TÔI</h2>
-                        <p class="text">IN YOUR EYES (IYE) là cuộc thi thường niên được tổ chức bởi CLB Truyền thông FTUNEWS. Cuộc thi
-                        là cơ hội cho các bạn trẻ đam mê lĩnh vực truyền thông được thể hiện tài năng và thỏa sức sáng tạo theo góc nhìn 
-                        riêng của bản thân. Đặt trọng tâm vào những vấn đề nổi cộm trong xã hội và tìm kiếm những cách thức thể hiện mới 
-                        lạ, IYE hứa hẹn sẽ trở thành nền tảng chung để giới trẻ thể hiện lập trường của bản thân, đồng thời mang theo sứ 
-                        mệnh lan tỏa những thông điệp tích cực đến với cộng đồng.</p>
-                        <p class="text">THỜI GIAN MỞ ĐƠN: 14/04 - 04/05/2022</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="row box-grad justify-content-md-center box-grad-color1 text-box shadow">
+                            <div class="col-lg-6 about-img">
+                                <img src="/assets/image/BND KHÔNG GIỚI HẠN.png" alt="responsive webite" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 about-text">
+                                <h2 class="title">VỀ CHÚNG TÔI</h2>
+                                <p class="text">IN YOUR EYES (IYE) là cuộc thi thường niên được tổ chức bởi CLB Truyền thông FTUNEWS. Cuộc thi
+                                là cơ hội cho các bạn trẻ đam mê lĩnh vực truyền thông được thể hiện tài năng và thỏa sức sáng tạo theo góc nhìn 
+                                riêng của bản thân. Đặt trọng tâm vào những vấn đề nổi cộm trong xã hội và tìm kiếm những cách thức thể hiện mới 
+                                lạ, IYE hứa hẹn sẽ trở thành nền tảng chung để giới trẻ thể hiện lập trường của bản thân, đồng thời mang theo sứ 
+                                mệnh lan tỏa những thông điệp tích cực đến với cộng đồng.</p>
+                                <span class="sub-title">THỜI GIAN MỞ ĐƠN: 14/04 - 04/05/2022</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,27 +113,27 @@
 
                     <div class="row justify-content-center">
                         <div class="col-lg-1" id="day">
-                            <span class="box-grad box-grad-color1 time-box">00</span>
-                            <span>ngày</span>
+                            <span class="box-grad box-grad-color1 time-box shadow-sm">00</span>
+                            <span class="sub-title">ngày</span>
                         </div>
                         <div class="col-lg-1" id="hour">
-                            <span class="box-grad box-grad-color1 time-box">00</span>
-                            <span>giờ</span>
+                            <span class="box-grad box-grad-color1 time-box shadow-sm">00</span>
+                            <span class="sub-title">giờ</span>
                         </div>
                         <div class="col-lg-1" id="minute">
-                            <span class="box-grad box-grad-color1 time-box">00</span>
-                            <span>phút</span>
+                            <span class="box-grad box-grad-color1 time-box shadow-sm">00</span>
+                            <span class="sub-title">phút</span>
                         </div>
                         <div class="col-lg-1" id="second">
-                            <span class="box-grad box-grad-color1 time-box">00</span>
-                            <span>giấy</span>
+                            <span class="box-grad box-grad-color1 time-box shadow-sm">00</span>
+                            <span class="sub-title">giây</span>
                         </div>
                     </div>
 
                     <div class="row justify-content-center">
                         <div class="col-lg-4">
                             <a class="btn-grad sign-up-box">ĐỀ BÀI VÒNG 1</a>
-                            <span>20h 24/04/2022</span>
+                            <span class="sub-title">20h 24/04/2022</span>
                         </div>
                         <div class="col-lg-4">
                             <a class="btn-grad sign-up-box">BOOKLEET CUỘC THI</a>
@@ -151,15 +155,15 @@
                     <h2 class="title">ĐỐI TƯỢNG THAM GIA</h2>
 
                     <div class="col-lg-4">
-                        <span class="box-grad box-grad-color2 title-box">ĐỐI TƯỢNG DỰ THI</span>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <span class="box-grad box-grad-color2 title-box sub-title shadow">ĐỐI TƯỢNG DỰ THI</span>
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <p class="text">Sinh viên trên địa bàn TP. Hồ Chí Minh, độ tuổi từ 18 - 22 có niềm đam mê về các lĩnh vực truyền thông và MarCom;</p>
                         </div>
                         
                     </div>
                     <div class="col-lg-4">
-                        <span class="box-grad box-grad-color2 title-box">KHÔNG THUỘC THÀNH PHẦN THAM GIA</span>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <span class="box-grad box-grad-color2 title-box sub-title shadow">KHÔNG THUỘC THÀNH PHẦN THAM GIA</span>
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <p class="text">Sinh viên trên địa bàn TP. Hồ Chí Minh, độ tuổi từ 18 - 22 có niềm đam mê về các lĩnh vực truyền thông và MarCom;
                                 <br>
                                 <br>Thành viên BTC không được phép tham gia dự thi.
@@ -168,8 +172,8 @@
                         
                     </div>
                     <div class="col-lg-4">
-                        <span class="box-grad box-grad-color2 title-box">HÌNH THỨC DỰ THI</span>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <span class="box-grad box-grad-color2 title-box sub-title shadow">HÌNH THỨC DỰ THI</span>
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <p class="text">Nhóm 3 - 4 người.</p>
                         </div>
                     </div>
@@ -185,59 +189,62 @@
     <section id="timeline" class="timeline-area section-nav">
         <div class="section-title text-center pb-10">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <h2 class="title">TIMELINE</h2>
 
-                    <div class="col-lg-5 milestone">
-                        <span class="box-grad box-grad-color1 title-box">Webinar Traning 1</span>
-                        <span class="title">13/04/2022</span>
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-5 milestone">
+                                <span class="box-grad box-grad-color1 title-box shadow">Webinar Traning 1</span>
+                                <span class="sub-title">13/04/2022</span>
+                            </div>
+        
+                            <h2 class="title">14/04 - 04/05: Mở cổng đăng ký dự thi</h2>
+        
+                            <div class="col-lg-5 milestone">
+                                <span class="box-grad box-grad-color1 title-box shadow">Webinar Traning 2</span>
+                                <span class="sub-title">20/04/2022</span>
+                            </div>
+                            <div class="col-lg-8 milestone round-info1">
+                                <span class="box-grad box-grad-color2 title-box shadow">ROUND 1</span>
+                                <span class="sub-title">24/04 - 08/05/2022</span>
+                            </div>
+                            <div class="col-lg-4 d-none hide-text1">
+                                <span>Chọn ra 10 đội xuất sắc nhất. Hạn chót: 23h59 08/05</span>
+                            </div>
+        
+                            <div class="col-lg-5 milestone">
+                                <span class="box-grad box-grad-color1 title-box shadow">Information Day</span>
+                                <span class="sub-title">28/04/2022</span>
+                            </div>
+                            
+        
+                            <div class="col-lg-8 milestone round-info2">
+                                <span class="box-grad box-grad-color2 title-box shadow">ROUND 2</span>
+                                <span class="sub-title">15/05 - 28/05/2022</span>
+                            </div>
+                            <div class="col-lg-4 d-none hide-text2">
+                                <span>Chọn ra 5 đội xuất sắc nhất. Hạn chót: 23h59 27/05</span>
+                            </div>
+        
+                            <div class="col-lg-5 milestone">
+                                <span class="box-grad box-grad-color1 title-box shadow">Mentor Connecting Day</span>
+                                <span class="sub-title">21/05/2022</span>
+                            </div>
+        
+                            <div class="col-lg-8 milestone round-info3">
+                                <span class="box-grad box-grad-color2 title-box shadow">ROUND 3</span>
+                                <span class="sub-title">04/06/2022</span>
+                            </div>
+                            <div class="col-lg-4 d-none hide-text3">
+                                <span>Thông báo kết quả chung cuộc và bế mạc cuộc thi</span>
+                            </div>
+                            
+                            <div class="col-lg-5 milestone">
+                                <span class="box-grad box-grad-color3 title-box shadow">Gala Night</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <h2 class="text">14/04 - 04/05: Mở cổng đăng ký dự thi</h2>
-
-                    <div class="col-lg-5 milestone">
-                        <span class="box-grad box-grad-color1 title-box">Webinar Traning 2</span>
-                        <span class="title">20/04/2022</span>
-                    </div>
-                    <div class="col-lg-8 milestone">
-                        <span class="box-grad box-grad-color2 title-box round-info">ROUND 1</span>
-                        <span class="title">24/04 - 08/05/2022</span>
-                    </div>
-                    <div class="col-lg-4 d-none hide-text">
-                        <span>Chọn ra 10 đội xuất sắc nhất. Hạn chót: 23h59 08/05</span>
-                    </div>
-
-                    <div class="col-lg-5 milestone">
-                        <span class="box-grad box-grad-color1 title-box">Information Day</span>
-                        <span class="title">28/04/2022</span>
-                    </div>
-                    
-
-                    <div class="col-lg-8 milestone">
-                        <span class="box-grad box-grad-color2 title-box round-info">ROUND 2</span>
-                        <span class="title">15/05 - 28/05/2022</span>
-                    </div>
-                    <div class="col-lg-4 d-none hide-text">
-                        <span>Chọn ra 5 đội xuất sắc nhất. Hạn chót: 23h59 27/05</span>
-                    </div>
-
-                    <div class="col-lg-5 milestone">
-                        <span class="box-grad box-grad-color1 title-box">Mentor Connecting Day</span>
-                        <span class="title">21/05/2022</span>
-                    </div>
-
-                    <div class="col-lg-8 milestone">
-                        <span class="box-grad box-grad-color2 title-box round-info">ROUND 3</span>
-                        <span class="title">04/06/2022</span>
-                    </div>
-                    <div class="col-lg-4 d-none hide-text">
-                        <span>Thông báo kết quả chung cuộc và bế mạc cuộc thi</span>
-                    </div>
-                    
-                    <div class="col-lg-5 milestone">
-                        <span class="box-grad box-grad-color3 title-box">Gala Night</span>
-                    </div>
-                    
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- section title -->
@@ -251,9 +258,9 @@
         <div class="section-title text-center pb-10">
             <div class="container">
                 <div class="row">
-                    <div class="prize-division">
+                    <div class="prize-division col-lg-8">
                         <h2 class="title">QUÁN QUÂN</h2>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <ul>
                                 <li>Tiền mặt trị giá 5.000.000 đồng.</li>
                                 <li>4 balo backpack Jamlos từ đơn vị tài trợ.</li>
@@ -262,9 +269,9 @@
                         </div>
                     </div>
 
-                    <div class="prize-division">
+                    <div class="prize-division col-lg-8">
                         <h2 class="title">Á QUÂN</h2>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <ul>
                                 <li>Tiền mặt trị giá 3.000.000 đồng..</li>
                                 <li>4 túi tote + 2 cross drink từ đơn vị tài trợ.</li>
@@ -273,9 +280,9 @@
                         </div>
                     </div>
 
-                    <div class="prize-division">
+                    <div class="prize-division col-lg-8">
                         <h2 class="title">QUÝ QUÂN</h2>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <ul>
                                 <li>Tiền mặt trị giá 2.000.000 đồng.</li>
                                 <li>4 túi tote + 1 cross drink từ đơn vị tài trợ.</li>
@@ -284,9 +291,9 @@
                         </div>
                     </div>
                     
-                    <div class="prize-division"> 
+                    <div class="prize-division col-lg-8"> 
                         <h2 class="title">TOP 4</h2>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <ul>
                                 <li>4 Voucher giảm giá 150k (Homies MOS) + 4 Voucher Giảm giá Elsa Speak 100k.</li>
                                 <li>4 set Sociolla.</li>
@@ -295,9 +302,9 @@
                         </div>
                     </div>
 
-                    <div class="prize-division">
+                    <div class="prize-division col-lg-8">
                         <h2 class="title">TOP 5</h2>
-                        <div class="box-grad box-grad-color1 text-box">
+                        <div class="box-grad box-grad-color1 text-box shadow">
                             <ul>
                                 <li>4 Voucher giảm giá 150k (Homies MOS).</li>
                                 <li>4 set Sociolla.</li>
