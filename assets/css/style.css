@@ -42,9 +42,12 @@ span {
     background-image: linear-gradient(to right, #D54086, #FEC66D);}
 .box-grad-color2 {
     background-image: linear-gradient(to right, #D54086, #4D2F8E);}
+.box-grad-color3 {
+    background-color: #FEC66D;}
 .box-grad {
     margin: 10px;
     height: auto;
+    box-sizing: content-box;
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
@@ -84,7 +87,7 @@ span {
 .btn-grad {
     background-image: linear-gradient(to top right, #D54086, #FEC66D);}
 .btn-grad {
-    width: 150px;
+    min-width: 150px;
     text-decoration: none;
     height: auto;
     text-align: center;
@@ -127,7 +130,12 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99; }
+    z-index: 99; 
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
 .navbar-area .navbar {
     position: relative;
     padding: 0; }
@@ -143,7 +151,7 @@ span {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
     .navbar-area .navbar .navbar-collapse {
       position: absolute;
       top: 115%;
@@ -151,26 +159,14 @@ span {
       width: 100%;
       background-color: #f4f6f7;
       z-index: 8;
-      padding: 10px 0;
+      padding: 5px 0;
+      border-radius: 15px;
       -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
       -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
       box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); } }
-@media (max-width: 767px) {
-    .navbar-area .navbar .navbar-collapse {
-      position: absolute;
-      top: 115%;
-      left: 0;
-      width: 100%;
-      background-color: #f4f6f7;
-      z-index: 8;
-      padding: 10px 0;
-      -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
-      -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
-      box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); } }
-
 
 .navbar-area .navbar .navbar-nav .nav-item {
-    margin: 0 8px;
+    margin: 3px 8px;
     position: relative; }
 .navbar-area .navbar .navbar-nav .nav-item a {
     font-size: 16px;
@@ -189,13 +185,11 @@ span {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-area .navbar .navbar-nav .nav-item a {
         padding: 10px 0;
-        display: block;
-        color: #121212; } }
+        display: block; } }
 @media (max-width: 767px) {
     .navbar-area .navbar .navbar-nav .nav-item a {
         padding: 10px 0;
-        display: block;
-        color: #121212; } }
+        display: block; } }
 
 .navbar-area .navbar .navbar-btn {
     position: relative;
@@ -233,6 +227,13 @@ span {
     background-color: transparent;
     color: #fff; }
 
+.navbar-area .dropdown-menu, .dropdown-item {
+    border-radius: 20px;
+} 
+.navbar-area .dropdown-menu .dropdown-item {
+    padding: 100px;
+}
+
 .navbar-area.sticky {
     background-color: white;
     z-index: 999;
@@ -242,15 +243,14 @@ span {
     box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); }
 .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
     background-color: #121212; }
-.navbar-area.sticky .navbar .navbar-nav .nav-item a {
+/* .navbar-area.sticky .navbar .navbar-nav .nav-item a {
     color: white;
-    opacity: 0.7; }
+    opacity: 0.7; } */
 .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
     background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
     background: -o-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
     background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, #121212 100%); }
-.navbar-area.sticky .navbar .navbar-nav .nav-item.active, .navbar-area.sticky .navbar .navbar-nav .nav-item a:hover {
-    opacity: 1; }
+
 
 
 /*===========================
@@ -273,6 +273,9 @@ span {
 /*===========================
         03.SIGN UP css 
 ===========================*/
+.signup-area .sign-up-box {
+    width: 300px;
+}
 
 
 /*===========================
@@ -298,6 +301,36 @@ span {
     width: 340px;
     height: 230px;
     font-size: 1em;}
+
+/*===========================
+        05.TIMELINE css 
+===========================*/
+.timeline-area .milestone {
+    margin: 20px auto;
+}
+.timeline-area .title-box {
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+.timeline-area .title {
+    font-size: 1.5em;
+}
+.timeline-area .title {
+    font-size: 1.5em;
+}
+
+/*===========================
+        06.PRIZE css 
+===========================*/
+.prize-area .prize-division {
+    margin: 20px auto;
+}
+.prize-area .prize-division .text-box{
+    font-size: 1.2em;
+    height: 90px;
+    line-height: 30px;
+    padding: 10px 30px;
+}
 
 /*===========================
     21.FOOTER css 
@@ -340,11 +373,10 @@ span {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 45px;
+    min-width: 45px;
     height: 45px;
     line-height: 45px;
     border-radius: 5px;
-    background-color: #0067f4;
     text-align: center;
     z-index: 99;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -353,7 +385,5 @@ span {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     display: none; }
-.back-to-top:hover {
-    color: #fff;
-    background-color: #0067f4; }
+
   

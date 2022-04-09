@@ -43,6 +43,7 @@ $(function() {
 
     $(".navbar-nav a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
+        $(".navbar-toggler").removeClass('active');
     });
 
     $(".navbar-toggler").on('click', function () {
@@ -65,6 +66,12 @@ $(function() {
     });
     
     
+    //===== Round information
+    $('.round-info').hover(function(){
+        $('.hide-text').removeClass('d-none');
+        }, function(){
+        $('.hide-text').addClass('d-none');
+    });
     
     //===== Back to top
     
@@ -89,20 +96,4 @@ $(function() {
     
     
     //===== 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 });
