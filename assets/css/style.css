@@ -1,9 +1,9 @@
 /*===========================
       01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   font-style: normal;}
 
@@ -11,13 +11,11 @@ html {
     scroll-behavior: smooth;
 }
 
-#about-img {
-    border-radius: 18px;
-    border: 1px solid white;
-}
+
 
 #logo {
-    max-width: 4.5em; }
+    max-width: 3.5em;
+    margin-left: 20px; }
 #banner {
     width: 100%;
 }
@@ -46,11 +44,10 @@ span {
     background-color: #FEC66D;}
 .box-grad {
     margin: 10px;
-    height: auto;
     box-sizing: content-box;
     text-align: center;
-    transition: 0.5s;
     background-size: 200% auto;
+    transition: 0.5s;
     color: black; }
 .text-box {
     border-radius: 20px;
@@ -64,11 +61,16 @@ span {
     display: block;}
 .sign-up-box {
     margin: 20px auto;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 1.2em;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 13px;
     width: 100px;
     border-radius: 10px;
     box-shadow: 0 0 20px #eee; }
+.sign-up-box:hover {
+    color: #FEC66D;
+}
 
 
 /* @media (max-width: 991px) {
@@ -93,7 +95,6 @@ span {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    background-size: 200% auto;
     color: white;            
     border-radius: 20px;
     display: block;
@@ -109,18 +110,22 @@ span {
 /*===== All Section Title Style =====*/
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 24px;
     margin: 10px }
 .title {
     color: #FEC66D;
-    font-size: 44px;
+    font-size: 2.2em;
     font-weight: 600;
     line-height: 55px; }
-@media (max-width: 767px) {
-    .section-title .title .text {
-        font-size: 100px;
-        line-height: 35px; } }
+.sub-title {
+    color: #FEC66D;
+    font-size: 1.4em;
+    font-weight: 600;}
+@media (max-width: 991px) {
+    .section-title, .title, .text {
+        font-size: 16px;
+        line-height: 18px; } }
 
 /*===========================
         01.NAVBAR css 
@@ -135,7 +140,8 @@ span {
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
+    transition: all 0.3s ease-out 0s; 
+}
 .navbar-area .navbar {
     position: relative;
     padding: 0; }
@@ -154,10 +160,10 @@ span {
 @media (max-width: 991px) {
     .navbar-area .navbar .navbar-collapse {
       position: absolute;
+      background-image: url(../image/web-banner.jpg);
       top: 115%;
       left: 0;
       width: 100%;
-      background-color: #f4f6f7;
       z-index: 8;
       padding: 5px 0;
       border-radius: 15px;
@@ -169,10 +175,10 @@ span {
     margin: 3px 8px;
     position: relative; }
 .navbar-area .navbar .navbar-nav .nav-item a {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 24px;
     font-weight: 700;
-    padding: 18px;
+    padding: 10px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -229,28 +235,29 @@ span {
 
 .navbar-area .dropdown-menu, .dropdown-item {
     border-radius: 20px;
-} 
-.navbar-area .dropdown-menu .dropdown-item {
-    padding: 100px;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s; } 
+#dropdown-menu-hover:hover {
+    color: #D54086;
 }
 
 .navbar-area.sticky {
-    background-color: white;
+    background-image: url(../image/web-banner.jpg);
+    background-position: top;
     z-index: 999;
     position: fixed;
     -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
     -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
     box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05); }
 .navbar-area.sticky .navbar .navbar-toggler .toggler-icon {
-    background-color: #121212; }
-/* .navbar-area.sticky .navbar .navbar-nav .nav-item a {
-    color: white;
-    opacity: 0.7; } */
+    background-color: #FEC66D; }
 .navbar-area.sticky .navbar .navbar-nav .nav-item a::before {
     background: -webkit-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
     background: -o-linear-gradient(left, rgba(18, 18, 18, 0) 0%, #121212 100%);
     background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, #121212 100%); }
-
 
 
 /*===========================
@@ -268,7 +275,15 @@ span {
 @media (max-width: 767px) {
     .about-area .about-title .sub-title {
         font-size: 16px; } }
-
+.about-area .about-img img {
+    border-radius: 18px;
+}
+.about-area .about-img, .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*===========================
         03.SIGN UP css 
@@ -306,17 +321,18 @@ span {
         05.TIMELINE css 
 ===========================*/
 .timeline-area .milestone {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .timeline-area .title-box {
     font-size: 1.5em;
-    padding: 10px 0;
+    padding: 5px 0;
 }
-.timeline-area .title {
-    font-size: 1.5em;
-}
-.timeline-area .title {
-    font-size: 1.5em;
+.hide-text {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; 
 }
 
 /*===========================
