@@ -7,9 +7,41 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
+body {
+  background-image: url(../image/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 html {
   scroll-behavior: smooth;
+}
+
+.section-nav {
+  padding: 120px 0;
+}
+@media (max-width: 500px) {
+  .section-nav {
+    padding: 50px 0;
+  }
+}
+
+span {
+  font-size: 2em;
+}
+
+.yellow-ctn {
+  border: #fec66d solid 4px;
+  border-radius: 45px;
+  margin: 10px 30px;
+  padding: 20px 15px;
+  color: white;
+  text-align: left;
+}
+
+.no-dot {
+  list-style-type:none;
 }
 
 #logo {
@@ -26,44 +58,15 @@ html {
     max-width: 3vw;
   }
 }
-
 #banner
 {
   width: 100%;
 }
 
-.section-nav {
-  padding: 120px 0;
-}
-@media (max-width: 500px) {
-  .section-nav {
-    padding: 50px 0;
-  }
-}
+/*===== Animation =====*/
 
-body {
-  background-image: url(../image/background.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-span {
-  font-size: 2em;
-}
 
-.yellow-ctn {
-  border: #fec66d solid 4px;
-  border-radius: 45px;
-  margin: 10px 30px;
-  padding: 20px 15px;
-  color: white;
-  text-align: left;
-}
-.no-dot {
-  list-style-type:none;
-}
 
 /*===== All BOX Style =====*/
 .box-grad-color1 {
@@ -110,7 +113,6 @@ span {
 
 
 /*===== All Button Style =====*/
-
 .btn-grad {
   background-image: linear-gradient(to top right, #d54086, #fec66d);
 }
