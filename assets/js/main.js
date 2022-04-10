@@ -71,24 +71,18 @@ $(function() {
     
     //===== Round information
     // $('.round-info1').hover(function(){
-    //     $('.hide-text1').fadeIn(400);
     //     $('.hide-text1').removeClass('d-none');
     //     }, function(){
-    //     $('.hide-text1').fadeOut(400);
     //     $('.hide-text1').addClass('d-none');
     // });
     // $('.round-info2').hover(function(){
-    //     $('.hide-text2').fadeIn(400);
     //     $('.hide-text2').removeClass('d-none');
     //     }, function(){
-    //     $('.hide-text2').fadeOut(400);
     //     $('.hide-text2').addClass('d-none');
     // });
     // $('.round-info3').hover(function(){
-    //     $('.hide-text3').fadeIn(400);
     //     $('.hide-text3').removeClass('d-none');
     //     }, function(){
-    //     $('.hide-text3').fadeOut(400);
     //     $('.hide-text3').addClass('d-none');
     // });
     

@@ -13,18 +13,19 @@ html {
 }
 
 #logo {
-  max-width: 3.5em;
-  margin-left: 20px;
+  max-width: 8vw;
+  margin-left: 10px;
 }
-
-/* #home {
-  min-height: 100vh;
-  background-image: url(../image/web-banner.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-} */
+@media (min-width: 767px) {
+  #logo {
+    max-width: 4vw;
+  }
+}
+@media (min-width: 1700px) {
+  #logo {
+    max-width: 3vw;
+  }
+}
 
 #banner
 {
@@ -33,6 +34,11 @@ html {
 
 .section-nav {
   padding: 120px 0;
+}
+@media (max-width: 500px) {
+  .section-nav {
+    padding: 50px 0;
+  }
 }
 
 body {
@@ -45,6 +51,18 @@ body {
 
 span {
   font-size: 2em;
+}
+
+.yellow-ctn {
+  border: #fec66d solid 4px;
+  border-radius: 45px;
+  margin: 10px 30px;
+  padding: 20px 15px;
+  color: white;
+  text-align: left;
+}
+.no-dot {
+  list-style-type:none;
 }
 
 /*===== All BOX Style =====*/
@@ -69,10 +87,6 @@ span {
   border-radius: 20px;
   text-align: justify;
 }
-.time-box {
-  padding: 0px 10px;
-  border-radius: 15px;
-}
 .title-box {
   color: white;
   border-radius: 30px;
@@ -81,36 +95,27 @@ span {
 }
 .sign-up-box {
   margin: 20px auto;
-  font-size: 1.2em;
-  line-height: 24px;
+  font-size: 1.4vw;
+  line-height: 1.2vw;
   font-weight: 700;
   padding: 13px;
   width: 100px;
   border-radius: 10px;
-  box-shadow: 0 0 20px #eee;
+  box-shadow: 0 0 15px #eee;
   cursor: pointer;
 }
 .sign-up-box:hover {
   color: #fec66d;
 }
 
-/* @media (max-width: 991px) {
-    .box-grad {
-        display: block; } } */
 
 /*===== All Button Style =====*/
-/* .grad-btn {
-    background-image: linear-gradient(to top right, #D54086, #FEC66D);
-    border-radius: 20px;
-    border: none;
-    text-decoration: none;
-} */
 
 .btn-grad {
   background-image: linear-gradient(to top right, #d54086, #fec66d);
 }
 .btn-grad {
-  min-width: 150px;
+  min-width: 10vw;
   text-decoration: none;
   height: auto;
   text-align: center;
@@ -120,37 +125,59 @@ span {
   border-radius: 20px;
   display: block;
 }
-
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  transform: scale(1.1);
   color: #fff;
   text-decoration: none;
 }
 
+
 /*===== All Section Title Style =====*/
 .text {
   color: white;
-  font-size: 1.2em;
-  line-height: 24px;
-  margin: 10px;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
 }
 .title {
   color: #fec66d;
-  font-size: 2.2em;
+  font-size: 2vw;
   font-weight: 600;
-  line-height: 55px;
+  line-height: 2vw;
+  text-align: center;
 }
 .sub-title {
   color: #fec66d;
-  font-size: 1.4em;
+  font-size: 1.8vw;
   font-weight: 600;
+  line-height: 1.8vw;
+
 }
-@media (max-width: 991px) {
-  .section-title,
-  .title,
+@media (max-width: 500px) {
   .text {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  .title {
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+  }
+  .sub-title {
+    font-size: 3.8vw;
+    line-height: 3.8vw;
+  }
+}
+@media (min-width: 1700px) {
+  .text {
+    font-size: 0.9vw;
+    line-height: 1.2vw;
+  }
+  .title {
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+  }
+  .sub-title {
+    font-size: 1.5vw;
+    line-height: 1.5vw;
   }
 }
 
@@ -207,10 +234,8 @@ span {
   position: relative;
 }
 .navbar-area .navbar .navbar-nav .nav-item a {
-  font-size: 1em;
-  line-height: 24px;
   font-weight: 700;
-  padding: 10px;
+  padding: 8px;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -266,21 +291,6 @@ span {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.navbar-area .navbar .navbar-btn li a.light {
-  border-color: #fff;
-}
-.navbar-area .navbar .navbar-btn li a.light:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.navbar-area .navbar .navbar-btn li a.solid {
-  background-color: #fff;
-  border-color: #fff;
-  color: #0067f4;
-}
-.navbar-area .navbar .navbar-btn li a.solid:hover {
-  background-color: transparent;
-  color: #fff;
-}
 
 .navbar-area .dropdown-menu,
 .dropdown-item {
@@ -293,6 +303,16 @@ span {
 }
 #dropdown-menu-hover:hover {
   color: #d54086;
+}
+
+@media (min-width: 1700px) {
+  .navbar-area .btn-grad {
+    min-width: 7.5vw;
+  }
+  .navbar-area .sign-up-box {
+    min-width: 8vw;
+    font-size: 1vw;
+  }
 }
 
 .navbar-area.sticky {
@@ -327,17 +347,6 @@ span {
 .about-area .text-box {
   padding: 15px 3px;
 }
-.about-area .about-title .sub-title {
-  font-size: 25px;
-  font-weight: 400;
-  color: #0067f4;
-  text-transform: uppercase;
-}
-@media (max-width: 767px) {
-  .about-area .about-title .sub-title {
-    font-size: 16px;
-  }
-}
 .about-area .about-img img {
   border-radius: 18px;
 }
@@ -348,22 +357,29 @@ span {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .about-area .title {
+    margin-top: 10px;
+  }
+}
 
 /*===========================
         03.SIGN UP css 
 ===========================*/
 .signup-area .sign-up-box {
-  width: 300px;
+  min-width: 22vw;
+  font-size: 1.2vw;
 }
 .time-box {
   display: block;
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
+  width: 7vw;
+  height: 7vw;
+  line-height: 7vw;
+  font-size: 3vw;
   text-align: center;
   border-radius: 20px;
-  margin: auto;
-  font-size: 50px;
+  margin: 0 auto;
+  color: white;
   font-weight: bold;
   -webkit-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
   -moz-box-shadow: 0px 10px 25px 0px rgba(18, 18, 18, 0.05);
@@ -371,7 +387,7 @@ span {
 }
 .time-ctn {
   align-items: center;
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 .title-box {
   color: white;
@@ -387,6 +403,56 @@ span {
     box-shadow: 0 0 20px #eee;
     cursor: pointer;
 } */
+@media (max-width: 500px) {
+  .signup-area .sign-up-box {
+    min-width: 50vw;
+    font-size: 3.8vw;
+    margin: 5px auto;
+  }
+  .time-box {
+    width: 20vw;
+    height: 20vw;
+    line-height: 20vw;
+    font-size: 8vw;
+  }
+  .title {
+    margin: 5px auto;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 766px) {
+  .signup-area .sign-up-box {
+    min-width: 50vw;
+    font-size: 3vw;
+    margin: 10px auto;
+  }
+  .time-box {
+    width: 15vw;
+    height: 15vw;
+    line-height: 15vw;
+    font-size: 8vw;
+  }
+  .title {
+    margin: 5px auto;
+  }
+}
+
+@media (min-width: 1700px) {
+  .signup-area .sign-up-box {
+    min-width: 15vw;
+    font-size: 1vw;
+    margin: 15px auto;
+  }
+  .time-box {
+    width: 4.5vw;
+    height: 4.5vw;
+    line-height: 4.5vw;
+    font-size: 3vw;
+  }
+  .title {
+    margin: 15px auto;
+  }
+}
 
 /*===========================
         04.INFORMATION css 
@@ -417,6 +483,69 @@ span {
   font-size: 1em;
 }
 
+@media (max-width: 500px) {
+  .information-area .title-box {
+    width: 50vw;
+    height: 20vw;
+  }
+  .information-area .sub-title {
+    font-size: 4vw;
+    line-height: 4.5vw;
+  }
+  .information-area .text-box {
+    width: 70vw;
+    height: 45vw;
+    margin: 0 auto;
+  }
+  .information-area .text {
+    margin: 0;
+    font-size: 4vw;
+    line-height: 4.5vw;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 766px) {
+  .information-area .title-box {
+    width: 40vw;
+    height: 15vw;
+  }
+  .information-area .sub-title {
+    font-size: 2.7vw;
+    line-height: 3.2vw;
+  }
+  .information-area .text-box {
+    width: 60vw;
+    height: 27vw;
+    margin: 0 auto;
+  }
+  .information-area .text {
+    margin: 0;
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  .information-area .title-box {
+    width: 13vw;
+    height: 4vw;
+  }
+  .information-area .sub-title {
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+  .information-area .text-box {
+    width: 17vw;
+    height: 10vw;
+    margin: 0 auto;
+  }
+  .information-area .text {
+    margin: 0;
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+}
+
 /*===========================
         05.TIMELINE css 
 ===========================*/
@@ -427,29 +556,21 @@ span {
   font-size: 1.5em;
   padding: 17px 0;
 }
-.hide-text {
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+.timeline-area .white-shadow {
+  box-shadow: 0 0 15px #eee;
 }
 
 .round-ctn1, .round-ctn2, .round-ctn3 {
   display: flex;
   position: relative;
 }
-
 .round-info1, .round-info2, .round-info3 {
-  width: 60%;
+  width: 100%;
   transition: 0.3s;
 }
-
 .hide-text1, .hide-text2, .hide-text3 {
   position: absolute;
-  width: 400px;
-  right: 0;
-  transition: 0.3s;
+  transition: 0.1s;
   opacity: 0;
   visibility: hidden;
   transition-delay: 0.1s;
@@ -458,39 +579,156 @@ span {
 .round-ctn1:hover .round-info1 {
   transform: translateX(-260px);
 }
-
 .round-ctn1:hover .hide-text1 {
   opacity: 100;
   visibility: visible;
 }
-
 .round-ctn2:hover .round-info2 {
   transform: translateX(-260px);
 }
-
 .round-ctn2:hover .hide-text2 {
   opacity: 100;
   visibility: visible;
 }
-
 .round-ctn3:hover .round-info3 {
   transform: translateX(-260px);
 }
-
 .round-ctn3:hover .hide-text3 {
   opacity: 100;
   visibility: visible;
 }
+
+@media (max-width: 500px) {
+  .timeline-area .title-box {
+    padding: 5px;
+  }
+  .timeline-area .event {
+    padding: 0 50px;
+  }
+  .timeline-area .title-box{
+    font-size: 5.8vw;
+  }
+  .timeline-area .event .title-box{
+    font-size: 5vw;
+  }
+  .hide-text1, .hide-text2, .hide-text3 {
+    width: 350px;
+  }
+  .round-ctn1:hover .round-info1, 
+  .round-ctn2:hover .round-info2, 
+  .round-ctn3:hover .round-info3 {
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 766px) {
+  .timeline-area .title-box {
+    font-size: 3vw;
+    padding: 8px 0;
+  }
+  .timeline-area .event {
+    padding: 0 50px;
+  }
+  .timeline-area .event .title-box{
+    font-size: 2.5vw;
+  }
+  .hide-text1, .hide-text2, .hide-text3 {
+    width: 500px;
+  }
+  .round-ctn1:hover .round-info1, 
+  .round-ctn2:hover .round-info2, 
+  .round-ctn3:hover .round-info3 {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1699px) {
+  .timeline-area .title-box {
+    font-size: 1.1em;
+    padding: 8px 0;
+  }
+  .hide-text1, .hide-text2, .hide-text3 {
+    width: 40vw;
+    right: -20vw;
+  }
+  .round-ctn1:hover .round-info1 {
+    transform: translateX(-230px);
+  }
+  .round-ctn2:hover .round-info2 {
+    transform: translateX(-230px);
+  }
+  .round-ctn3:hover .round-info3 {
+    transform: translateX(-230px);
+  }
+}
+
+@media (min-width: 1700px) {
+  .hide-text1, .hide-text2, .hide-text3 {
+    width: 29vw;
+    top: 0.2vw;
+    right: -18vw;
+    font-size: 1vw;
+  }
+}
+
 /*===========================
         06.PRIZE css 
 ===========================*/
+.prize-area .title {
+  margin-bottom: 10px;
+}
 .prize-area .prize-division {
+  display: inline-block;
   margin: 20px auto;
+}
+.prize-area .prize-division ul {
+  padding-left: 15px;
 }
 .prize-area .prize-division .text-box {
   font-size: 1.2em;
-  line-height: 30px;
+  line-height: 1.2em;
   padding: 10px 30px;
+}
+
+@media (max-width: 500px) {
+  .prize-area .prize-division .text-box {
+    width: 70vw;
+    height: 20vw;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/*===========================
+        07.RULE css 
+===========================*/
+.rule-area .text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+}
+.rule-area .title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .rule-area .text {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  .rule-area .no-dot{
+    list-style-type: none;
+    padding: 0 30px;
+  }
+  .prize-area .prize-division .text-box {
+    width: 70vw;
+    height: 20vw;
+    font-size: 3.5vw;
+    line-height: 4vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 
 /*===========================
@@ -501,22 +739,6 @@ span {
   padding-top: 90px;
   padding-bottom: 120px;
   scroll-behavior: smooth;
-}
-.footer-area .social li {
-  display: inline-block;
-  margin: 0 5px;
-}
-.footer-area .social li a img {
-  width: 50px;
-  color: red;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-.footer-area .social li a:hover {
-  color: #0067f4;
 }
 .footer-area .footer-support {
   padding-top: 21px;
@@ -529,11 +751,10 @@ span {
   margin-top: 9px;
   display: block;
 }
-@media (max-width: 767px) {
-  .footer-area .footer-support span {
-    display: block;
-  }
+.footer-area .title {
+  margin-bottom: 10px;
 }
+
 
 .logo {
   width: 80%;
@@ -548,8 +769,8 @@ span {
   font-size: 1.5vw;
 }
 .social-logo {
-  font-size: 8px;
-  padding: 20px 120px 0;
+  font-size: 10px;
+  padding: 10px 120px 0;
 }
 .social-ctn {
   padding: 20px;
@@ -559,14 +780,10 @@ span {
   display: flex;
   align-items: center;
 }
-.contact-ctn {
-  border: #fec66d solid 4px;
-  border-radius: 45px;
-  margin: 10px 30px;
-  padding: 30px 20px;
-  color: white;
-  text-align: left;
+.contact-name {
+  margin-left: 20px;
 }
+
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
