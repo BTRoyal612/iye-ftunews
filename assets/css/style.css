@@ -349,6 +349,9 @@ span {
 .about-area {
   position: relative;
 }
+.about-area .title {
+  font-size: 1.7vw;
+}
 .about-area .text-box {
   padding: 15px 3px;
 }
@@ -367,6 +370,7 @@ span {
     margin: 10px;
   }
 }
+
 
 /*===========================
         03.SIGN UP css 
@@ -690,14 +694,23 @@ span {
   display: inline-block;
   margin: 20px auto;
 }
-.prize-area .prize-division ul {
-  padding-left: 15px;
-}
 .prize-area .prize-division .text-box {
   color: white;
   font-size: 1.2em;
   line-height: 1.2em;
   padding: 10px 30px;
+}
+.prize-area .prize-division ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.prize-area .prize-division ul li {
+  padding-left: 8px;
+}
+.prize-area .prize-division ul li::before {
+  content: "➤";
+  padding-right: 16px;
 }
 
 @media (max-width: 500px) {
