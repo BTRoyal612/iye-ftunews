@@ -2,6 +2,7 @@
       01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800");
 body {
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
@@ -138,48 +139,50 @@ span {
 .text {
   color: white;
   font-size: 1.2vw;
-  line-height: 1.5vw;
+  line-height: 1.7vw;
 }
 .title {
-  color: #fec66d;
+  color: #ffbd3b;
+  font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   font-weight: 600;
-  line-height: 2vw;
+  line-height: 2.2vw;
   text-align: center;
 }
 .sub-title {
-  color: #fec66d;
+  color: #ffbd3b;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.8vw;
   font-weight: 600;
-  line-height: 1.8vw;
+  line-height: 2vw;
 
 }
 @media (max-width: 500px) {
   .text {
     font-size: 3vw;
-    line-height: 3vw;
+    line-height: 5vw;
   }
   .title {
     font-size: 4.5vw;
-    line-height: 4.5vw;
+    line-height: 4.9vw;
   }
   .sub-title {
     font-size: 3.8vw;
-    line-height: 3.8vw;
+    line-height: 4.2vw;
   }
 }
 @media (min-width: 1700px) {
   .text {
-    font-size: 0.9vw;
-    line-height: 1.2vw;
+    font-size: 0.8vw;
+    line-height: 1.1vw;
   }
   .title {
-    font-size: 1.7vw;
-    line-height: 1.7vw;
+    font-size: 1.6vw;
+    line-height: 1.9vw;
   }
   .sub-title {
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 1.4vw;
+    line-height: 1.7vw;
   }
 }
 
@@ -361,7 +364,7 @@ span {
 }
 @media (max-width: 500px) {
   .about-area .title {
-    margin-top: 10px;
+    margin: 10px;
   }
 }
 
@@ -599,6 +602,11 @@ span {
   opacity: 100;
   visibility: visible;
 }
+.big-bold {
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
 
 @media (max-width: 500px) {
   .timeline-area .title-box {
@@ -653,13 +661,13 @@ span {
     right: -20vw;
   }
   .round-ctn1:hover .round-info1 {
-    transform: translateX(-230px);
+    transform: translateX(-250px);
   }
   .round-ctn2:hover .round-info2 {
-    transform: translateX(-230px);
+    transform: translateX(-250px);
   }
   .round-ctn3:hover .round-info3 {
-    transform: translateX(-230px);
+    transform: translateX(-250px);
   }
 }
 
@@ -686,6 +694,7 @@ span {
   padding-left: 15px;
 }
 .prize-area .prize-division .text-box {
+  color: white;
   font-size: 1.2em;
   line-height: 1.2em;
   padding: 10px 30px;
@@ -745,13 +754,17 @@ span {
 .footer-area .footer-support {
   padding-top: 21px;
 }
+.footer-area .footer-support h3 {
+  text-align: center;
+}
 .footer-area .footer-support span {
-  font-size: 16px;
-  line-height: 24px;
-  color: #121212;
-  font-weight: 600;
+  text-align: center;
+  font-weight: 700;
   margin-top: 9px;
   display: block;
+}
+.footer-area .footer-support span a {
+  color: white;
 }
 .footer-area .title {
   margin-bottom: 10px;
@@ -767,8 +780,10 @@ span {
   display: flex;
   align-items: center;
 }
-.logo-ctn span {
+.social-ctn span {
   font-size: 1.5vw;
+  line-height: 1.5vw;
+  font-weight: 600;
 }
 .social-logo {
   font-size: 10px;
@@ -782,8 +797,12 @@ span {
   display: flex;
   align-items: center;
 }
-.contact-name {
-  margin-left: 20px;
+
+@media (max-width: 500px) {
+  .social-ctn span {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
 }
 
 
