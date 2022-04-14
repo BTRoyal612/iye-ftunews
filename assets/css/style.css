@@ -64,11 +64,6 @@ span {
   width: 100%;
 }
 
-/*===== Animation =====*/
-
-
-
-
 /*===== All BOX Style =====*/
 .box-grad-color1 {
   background-image: linear-gradient(to right, #d54086, #fec66d);
@@ -355,6 +350,9 @@ span {
 .about-area .text-box {
   padding: 15px 3px;
 }
+.about-area .text {
+  margin: 10px;
+}
 .about-area .about-img img {
   border-radius: 18px;
 }
@@ -367,7 +365,8 @@ span {
 }
 @media (max-width: 500px) {
   .about-area .title {
-    margin: 10px;
+    margin-top: 10px;
+    font-size: 4.5vw;
   }
 }
 
@@ -706,6 +705,7 @@ span {
   margin: 0;
 }
 .prize-area .prize-division ul li {
+  padding: 3px 0;
   padding-left: 8px;
 }
 .prize-area .prize-division ul li::before {
@@ -715,12 +715,8 @@ span {
 
 @media (max-width: 500px) {
   .prize-area .prize-division .text-box {
-    width: 70vw;
-    height: 20vw;
-    font-size: 3.5vw;
-    line-height: 4vw;
-    margin: 0 auto;
-    padding: 20px;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 }
 
@@ -729,8 +725,8 @@ span {
 ===========================*/
 .rule-area .text {
   text-align: justify;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.5vw;
+  line-height: 2vw;
 }
 .rule-area .title {
   margin-bottom: 10px;
@@ -738,29 +734,30 @@ span {
 
 @media (max-width: 500px) {
   .rule-area .text {
-    font-size: 3.5vw;
-    line-height: 4vw;
+    font-size: 4vw;
+    line-height: 5vw;
   }
   .rule-area .no-dot{
     list-style-type: none;
     padding: 0 30px;
   }
-  .prize-area .prize-division .text-box {
-    width: 70vw;
-    height: 20vw;
-    font-size: 3.5vw;
-    line-height: 4vw;
-    margin: 0 auto;
-    padding: 20px;
-  }
 }
 
 /*===========================
-    21.FOOTER css 
+      08.SPONSORS css 
+===========================*/
+.sponsors-area img {
+  border-radius: 50px;
+  box-shadow: 0 0 15px #eee;
+}
+
+
+/*===========================
+      09.FOOTER css 
 ===========================*/
 /*===== FOOTER FIVE =====*/
 .footer-area {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 120px;
   scroll-behavior: smooth;
 }

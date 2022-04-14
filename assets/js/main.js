@@ -109,7 +109,7 @@ $(function() {
     
     
     //===== Count down time
-    var countDownDate = new Date("April 24, 2022 20:00:00").getTime();
+    var countDownDate = new Date("May 04, 2022 23:59:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
