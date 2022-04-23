@@ -112,7 +112,7 @@ img {
   color: #fec66d;
 }
 .ques-box {
-  margin: 100px auto;
+  margin-bottom: 100px;
   border-radius: 20px;
   box-shadow: 0 0 15px #eee;
 }
@@ -761,9 +761,26 @@ img {
   box-shadow: 0 0 15px #eee;
 }
 
+/*===========================
+      09.ROUND1 css 
+===========================*/
+.round1-area .sign-up-box {
+  min-width: 22vw;
+  font-size: 1.2vw;
+}
+@media (max-width: 500px) {
+  .round1-area .sign-up-box {
+    min-width: 50vw;
+    font-size: 3.8vw;
+    margin: 5px auto;
+  }
+  .round1-area .ques-box {
+    margin-bottom: 50px;
+  }
+}
 
 /*===========================
-      09.FOOTER css 
+      10.FOOTER css 
 ===========================*/
 /*===== FOOTER FIVE =====*/
 .footer-area {
